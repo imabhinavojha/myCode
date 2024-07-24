@@ -1,11 +1,11 @@
 # myCode
 ## _Java And DSA Learning_
 
-[![N|Solid](https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyndnp/wrkr/x5/products/pictures/item/free/original/KRa0iPIVe-Limeroad_O.jpeg)](https://www.npmjs.com/package/chai)
+[![N|Solid](https://imageio.forbes.com/specials-images/imageserve/5e7cdb76281468000685c675/0x0.jpg?format=jpg&crop=640,360,x0,y60,safe&height=900&width=1600&fit=bounds)](https://docs.oracle.com/javase/8/docs/api/)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://GoFynd@dev.azure.com/GoFynd/RTI/_git/deadpool)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/imabhinavojha/myCode)
 
-Deadpool is a API base Automation Testing framework,
+
 - Type some Markdown on the left
 - See HTML in the right
 - ✨Magic ✨
@@ -33,29 +33,26 @@ Deadpool is a API base Automation Testing framework,
 ## Tech
 
 Deadpool uses a number of open source projects to work properly:
-- [Java] - evented I/O for the backend
-- [RestAssured] - Axios is a promise-based HTTP Client for node.js and the browser.
-- [Mongo] - ☕️ Chai is a assertion library for node and the browser with any javascript testing framework.☕️
-- [SQL] - ☕️ Simple, flexible, fun JavaScript test framework for Node.js & The Browser ☕️
+- [Java] - Programming Language
+- [RestAssured] - API Testing Framework for Java .
+- [Mongo] - Mongo DB Connection 
+- [SQL] - Sql DB Connection 
 
 ## Installation
 
-Deadpool requires [Node.js](https://nodejs.org/) v10+ to run.
+myCode requires [Java](https://www.java.com/en/download/help/mac_install.html) v8+ to run.
 
 Install the dependencies and devDependencies and start the server.
 
 ```sh
-cd myCode
-npm i
-npm start 
-Ex : npm start <>
+cd myCode 
 ```
 
 ## License
 
 [git-repo-url]: <https://github.com/joemccann/dillinger.git>
-[node.js]: <http://nodejs.org>
-[Axios]: <https://www.npmjs.com/package/axios>
-[Mocha]: <https://www.npmjs.com/package/mocha>
-[Chai]: <https://www.npmjs.com/package/chai>
+[Java]: <https://www.java.com/>
+[RestAssured]: <https://rest-assured.io/>
+[Mongo]: <https://www.mongodb.com/docs/>
+[SQL]: <https://www.npmjs.com/package/chai>
  
