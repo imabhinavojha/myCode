@@ -10,8 +10,7 @@ import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.nio.Buffer;
+import java.io.IOException;
 import java.util.Map;
 import java.util.logging.Logger;
 
@@ -19,9 +18,10 @@ public class RestAPI {
 
     private static final Logger logger = Logger.getLogger(MockApiClient.class.getName());
 
-    //If request is successful, status code will be 200
     @Test
-    public void Case1() {
+    public void Case1() throws IOException {
+
+        MockApiClient.postWeatherMock();
         // Specify the base URL to the RESTful web service
         RestAssured.baseURI = "https://mock.extensions.uat.fyndx1.de/masquerader/abhinav/RestAPISuccess";
         RequestSpecification httpRequest = RestAssured.given();
@@ -58,7 +58,8 @@ public class RestAPI {
     }
 
     @Test
-    public void Case2() {
+    public void Case2() throws IOException {
+        MockApiClient.postWeatherMock1();
         RestAssured.baseURI = "https://mock.extensions.uat.fyndx1.de/masquerader/abhinav/RestAPISuccess1";
         RequestSpecification httpRequest = RestAssured.given();
         Response response = httpRequest.get("");
@@ -76,4 +77,10 @@ public class RestAPI {
         System.out.println("Response Body is: " + body.prettyPrint());
     }
 
+
+    @Test
+    public void deleteMockCase() throws IOException {
+        MockApiClient.deleteMock();
     }
+
+}

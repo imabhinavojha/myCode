@@ -18,6 +18,9 @@ public class MockApiClient {
     private static final Logger logger = Logger.getLogger(MockApiClient.class.getName());
 
     private static  String url = "https://mock.extensions.uat.fyndx1.de/masquerader/url/create/";
+    private static  String deleteUrl = "https://mock.extensions.uat.fyndx1.de/masquerader/url/delete/";
+
+
 
     private static  Headers headers = new Headers.Builder()
             .add("Content-Type", "application/json")
@@ -29,7 +32,7 @@ public class MockApiClient {
 
     public static void main(String[] args) {
         try {
-            postWeatherMock1();
+            deleteMock();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -147,6 +150,27 @@ public class MockApiClient {
             logger.info("Response: " + response.body().string());
         }
     }
+
+    public static void deleteMock() throws IOException {
+
+        JSONObject requestBodyJson = new JSONObject()
+                .put("deleting_identifier", "RestAPI");
+
+        RequestBody body = RequestBody.create(requestBodyJson.toString(), MediaType.get("application/json"));
+
+        Request request = new Request.Builder()
+                .url(deleteUrl)
+                .post(body)
+                .headers(headers)
+                .build();
+        try (Response response = client.newCall(request).execute()) {
+            if (!response.isSuccessful()) {
+                throw new IOException("Unexpected code " + response);
+            }
+            logger.info("Response: " + response.body().string());
+        }
+    }
+
 
 
 }
