@@ -28,6 +28,7 @@
       <version>19.8.0.0</version>
     </dependency>
 
+
     <!-- Java MongoDB Driver dependency -->
     <dependency>
       <groupId>org.mongodb</groupId>
@@ -79,6 +80,19 @@
       <artifactId>json-schema-validator</artifactId>
       <version>4.2.0</version>
       <scope>test</scope>
+    </dependency>
+
+
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>4.5.13</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.squareup.okhttp3</groupId>
+      <artifactId>okhttp</artifactId>
+      <version>4.9.3</version>
     </dependency>
 
   </dependencies>
