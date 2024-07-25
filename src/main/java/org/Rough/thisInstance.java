@@ -1,4 +1,4 @@
-package org.Interviewbit.Other;
+package org.Rough;
 
 class Sample {
     Sample name() {

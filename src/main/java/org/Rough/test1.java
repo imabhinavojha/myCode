@@ -1,4 +1,4 @@
-package org.Interviewbit.Other;
+package org.Rough;
 
 import java.util.Arrays;
 
@@ -8,6 +8,7 @@ public class test1 {
         calculateResult(s);
     }
 
+    
     private static int calculateResult(String s) {
         String[] arr = splitString(s);
         int ans = Integer.parseInt(arr[0]);

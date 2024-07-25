@@ -1,4 +1,4 @@
-package org.Interviewbit.Other;
+package org.Rough;
 
 class def {
     public void sum() {

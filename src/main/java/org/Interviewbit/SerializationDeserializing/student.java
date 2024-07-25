@@ -1,4 +1,4 @@
-package org.Interviewbit.Other;
+package org.Interviewbit.SerializationDeserializing;
 
 import java.io.Serializable;
 
@@ -77,8 +77,10 @@ public class student implements Serializable{
         this.age = age;
     }
 
-    public void name() {
-        System.out.println("Display my name is " + this.name);
+    public void printDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("Email: " + email);
+        System.out.println("Address: " + address);
+        System.out.println("Age: " + age);
     }
-
 }

@@ -1,4 +1,4 @@
-package org.Interviewbit.Other;
+package org.Rough;
 
 public class test {
     public static void main(String[] args) {
