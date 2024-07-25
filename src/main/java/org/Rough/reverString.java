@@ -1,4 +1,4 @@
-package org.Interviewbit.Other;
+package org.example;
 
 public class reverString {
 
