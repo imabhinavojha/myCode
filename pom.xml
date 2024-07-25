@@ -15,6 +15,19 @@
   </properties>
 
   <dependencies>
+
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.2.20</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.oracle.database.jdbc</groupId>
+      <artifactId>ojdbc8</artifactId>
+      <version>19.8.0.0</version>
+    </dependency>
+
     <!-- Java MongoDB Driver dependency -->
     <dependency>
       <groupId>org.mongodb</groupId>
@@ -52,11 +65,7 @@
       <version>7.7.0</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>7.0.0</version>
-    </dependency>
+
     <!-- https://mvnrepository.com/artifact/org.json/json -->
     <dependency>
       <groupId>org.json</groupId>
