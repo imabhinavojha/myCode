@@ -1,4 +1,4 @@
-package org.example;
+package org.Rough;
 
 class Sample {
     Sample name() {
